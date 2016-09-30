@@ -1,0 +1,46 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Sample DashBoard</title>
+
+<!-- <style src="style.css"></style> -->
+
+</head>
+<body>
+
+
+
+	<div class="container">
+		<div class="chartContainer">
+			<div id="headerBanner"></div>
+			<div>
+				<center>
+					<!-- Date:<input type="date" id="startDate"
+						style="width: 90px; height: 20px;" value="DD/MM/YYYY"></input> -->
+					From : <input type="text" id="fromHours" style="width: 25px; height: 20px;" value="HH">:
+							<input type="text" id="fromMins" style="width: 25px; height: 20px;"value="MM">:
+							<input type="text" id="fromSecs" style="width: 25px; height: 20px;" value="SS"> 
+					Duration :<input type="text" id="duration" style="width: 25px; height: 20px;" value="">mins
+					Refresh Interval:<input type="text" id="intervalLength" style="width: 75px; height: 20px;"
+						value="5-120(mins)">mins
+					<button type="button" onclick="setParameters();">Visualize
+						Again</button>
+				</center>
+			</div>
+			<div id="topContainer" style="overflow: hidden;"></div>
+			<div id="middleContainer" style="overflow: hidden; width: 100%;">
+			</div>
+			<div id="bottomContainer" style="overflow: hidden"></div>
+
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"
+		charset="utf-8"></script>
+	<script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+	
+	<script type="text/javascript" src="scriptWithoutKeys.js"></script>
+
+</body>
+</html>
